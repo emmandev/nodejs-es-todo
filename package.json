@@ -1,0 +1,33 @@
+{
+  "name": "todo-service",
+  "version": "1.0.0",
+  "description": "",
+  "author": "emmandev",
+  "license": "ISC",
+  "main": "src/main.js",
+  "engines": {
+    "node": "12.16.0",
+    "npm": "6.14.4"
+  },
+  "scripts": {
+    "dev": "nodemon dist",
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^2.14.1",
+    "mysql": "^2.18.1",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "ext": "js",
+    "exec": "node ./src/main.js",
+    "watch": [
+      "src"
+    ]
+  }
+}
